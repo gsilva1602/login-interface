@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="enabled">
    <bool>true</bool>
   </property>
@@ -9,9 +12,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>461</width>
-    <height>466</height>
+    <width>470</width>
+    <height>500</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>470</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>470</width>
+    <height>500</height>
+   </size>
   </property>
   <property name="font">
    <font>
@@ -234,7 +249,7 @@ border-width: 2px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>461</width>
+     <width>470</width>
      <height>21</height>
     </rect>
    </property>

@@ -62,6 +62,10 @@ def registration():
     password = registrationScreen.lineEdit_3.text()
     r_password = registrationScreen.lineEdit_4.text()
 
+    if name == '' or login == '' or password == '' or r_password == '':
+        registrationScreen.label_2.setText("Necessário preencher todos os campos!")
+        return
+
     if userExists(login):
         registrationScreen.label_2.setText('Usuário já cadastrado.')
         return
