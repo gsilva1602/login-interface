@@ -17,6 +17,10 @@ def callSecondScreen():
     base = sqlite3.connect('registrationBase.db')
     cursor = base.cursor()
 
+    if userName == '' or password == '':
+        firstScreen.label_4.setText("Preencher ambos os campos.")
+        return
+
     # validate if your datas are correct or not
     try:
         cursor.execute("SELECT password FROM registration WHERE login = '{}'".format(userName))
